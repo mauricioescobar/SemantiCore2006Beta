@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<semanticore showgui="true">
+		
+	<!--
+	
+	<agent name="Agent1" class="semanticore.example.Agent"/>
+	<agent name="Agent2" class="semanticore.example.Agent"/>
+	<agent name="Agent3" class="semanticore.example.Agent"/>
+	
+	-->
+	
+	<agent name="Agent1" class="instancias.exemplos.AgentCreator"/>
+	
+</semanticore>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<semanticoreinstantiation>
+	<!-- Default engines  -->
+	<decisionengine class="semanticore.agent.decision.hotspots.InferenceEngine"/>
+	<executionengine class="semanticore.agent.execution.hotspots.SCWorkflowEngine"/>
+</semanticoreinstantiation>

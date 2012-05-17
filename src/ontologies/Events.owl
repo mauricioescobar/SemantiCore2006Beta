@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://semanticore.pucrs.br#"
+  xml:base="http://semanticore.pucrs.br">
+  <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:ID="Event"/>
+  <owl:Class rdf:ID="SensorRemoved">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="SensorialEvent"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ActionStarted">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="ExecutionEvent"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#SensorialEvent">
+    <rdfs:subClassOf rdf:resource="#Event"/>
+  </owl:Class>
+  <owl:Class rdf:ID="SensorAdded">
+    <rdfs:subClassOf rdf:resource="#SensorialEvent"/>
+  </owl:Class>
+  <owl:Class rdf:about="#ExecutionEvent">
+    <rdfs:subClassOf rdf:resource="#Event"/>
+  </owl:Class>
+  <owl:Class rdf:ID="StartAction">
+    <rdfs:subClassOf rdf:resource="#ExecutionEvent"/>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:ID="parameter">
+    <rdfs:domain rdf:resource="#Event"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 2.1, Build 284)  http://protege.stanford.edu -->
